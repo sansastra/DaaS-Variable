@@ -210,11 +210,11 @@ public class SimulatorParameters {
     }
     public static int getTotalCapacity(){return capacity ;}
 
-    public static void  setDefrag(boolean defrag, int fragment){
-        SimulatorParameters.defrag = defrag;
-        if(defrag)
-            defragPeriod = defragTime.execute()*fragment;
-    }
+        public static void  setDefrag(boolean defrag, int fragment){
+            SimulatorParameters.defrag = defrag;
+            if(defrag)
+                defragPeriod = defragTime.execute()*fragment;
+        }
 
     public static int getWantDefrag() {
         return wantDefrag;
